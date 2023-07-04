@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@900&display=swap');
+/*!Base Css Starts */
+*{
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    font-family: 'Electrolize', sans-serif;
+}
+/*!Base Css Ends */
+.navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+.logo{
+    font-size: 30px;
+    color: rgb(255,70,70);
+    
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+.menu-list-item{
+    cursor: pointer;
+}
+
+.menu-list-item:hover{
+    font-weight: bold;
+}
+.menu-list-item.active{
+    font-weight: bold;
+}
+.profile-picture{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.sidebar{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50px;
+}

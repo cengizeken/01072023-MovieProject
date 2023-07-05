@@ -5,10 +5,11 @@
 
 }
 body{
-    height: 100vh;
+    /* height: 200vh; */
     font-family: 'Electrolize', sans-serif;
 }
 /*!Base Css Ends */
+/*!Navbar Starts*/
 .navbar{
     background-color: black;
     height: 60px;
@@ -43,15 +44,108 @@ body{
 .menu-list-item.active{
     font-weight: bold;
 }
+.profile-container{
+    border: solid 2px red;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
 .profile-picture{
     height: 32px;
     width: 32px;
     object-fit: cover;
     border-radius: 50%;
 }
+.profile-text-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1px;
+}
+.toggle{
+    /* border: 5px solid blue; */
+    width: 40px;
+    background-color: white;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-icon{
+    color: goldenrod;
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+/*!Navbar Ends*/
+/*!Sidebar Starts*/
 .sidebar{
     background-color: black;
     color: white;
     height: 100%;
     width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    row-gap: 40px;
+    position: fixed;
+    top: 0;
 }
+.sidebar i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*!Sidebar Ends*/
+/*!Featured Starts*/
+.content-wrapper{
+    margin-left: 50px;/*çünkü sidebar in width değeri 50px*/
+}
+.featured-content{
+    background: url("img/spiderman.jpg");
+    padding: 50px;
+    height: calc(100vh - 160px);
+    background-size: 100% 100%;
+}
+.featured-title{
+    /* border: 5px solid black; */
+    width: 400px;
+}
+.featured-desc{
+    /* border: 5px solid blue; */
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 30px 0;
+}
+.featured-buttons{
+    display: flex;
+    column-gap: 20px;
+}
+.featured-buttons button{
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-button{
+    background-color: rgba(145, 142,142,0.5);
+    color:white;
+}
+/*!Featured Ends*/

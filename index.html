@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film Sitesi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ! Navbar Starts -->
     <div class="navbar">
-        <div class="navbar-wrapper">
-            <div class="logo-wrapper">
-                <h1 class="logo">LOGO</h1>
-            </div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item active">Ana Sayfa</li>
-                    <li class="menu-list-item">Filmler</li>
-                    <li class="menu-list-item">Diziler</li>
-                    <li class="menu-list-item">Listem</li>
-                    <li class="menu-list-item">Popüler</li>
-                </ul>
-            </div>
-            <div class="profile-container">
-                <img class="profile-picture" src="/img/profile.jpg" alt="">
-                <div class="profile-text-container">
-                    <span class="profile-text">Hesabım</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                </div>
-                <div class="toggle">
-                    <i class="bi bi-moon-fill"></i>
-                    <i class="bi bi-brightness-high-fill"></i>
-                    <div class="toggle-ball">
-
-                    </div>
-                </div>
-            </div>
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">LOGO</h1>
         </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">Ana Sayfa</li>
+            <li class="menu-list-item">Filmler</li>
+            <li class="menu-list-item">Diziler</li>
+            <li class="menu-list-item">Listem</li>
+            <li class="menu-list-item">Popüler</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="/img/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+          <div class="toggle">
+            <i class="bi bi-moon-fill toggle-icon"></i>
+            <i class="bi bi-brightness-high-fill toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="sidebar">sidebar</div>
-</body>
+    <!-- ! Navbar Ends -->
 
+    <!-- ! Sidebar Starts -->
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <i class="bi bi-house-door-fill"></i>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmarks-fill"></i>
+      <i class="bi bi-hourglass-top"></i>
+      <i class="bi bi-cart-fill"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--! Sidebar Ends -->
+
+    <!-- ! Content Starts -->
+    <div class="container">
+      <!-- ? Featured Content Starts -->
+      <div class="content-wrapper">
+        <div class="featured-content">
+          <img class="featured-title" src="img/spiderman-title.png" alt="" />
+          <p class="featured-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea, adipisci et rem laboriosam explicabo animi nam asperiores rerum cupiditate at optio exercitationem unde nisi consectetur commodi facere debitis magnam velit perferendis, sapiente tempora ut. Deleniti mollitia perspiciatis atque id dolor blanditiis autem velit neque, aspernatur maiores harum ullam deserunt?
+          </p>
+          <div class="featured-buttons">
+            <button class="play-button">
+              <i class="bi bi-play-circle"></i>
+              Oynat
+            </button>
+            <button class="info-button">
+              <i class="bi bi-info-circle"></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ? Featured Content Ends -->
+    </div>
+
+    <!-- ! Content Ends -->
+  </body>
 </html>

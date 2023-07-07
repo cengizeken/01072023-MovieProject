@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 200vh;
+    /* height: 200vh; */
     font-family: 'Electrolize', sans-serif;
 }
 
@@ -24,6 +24,7 @@ body {
     color: white;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar-wrapper {
@@ -153,6 +154,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
     margin: 30px 0;
+    color: black;
 }
 
 .featured-buttons {
@@ -207,6 +209,9 @@ body {
     column-gap: 30px;
 }
 
+.movie-list-wrapper{
+    overflow: hidden;
+}
 .movie-item {
     position: relative;
 }
@@ -218,8 +223,8 @@ body {
 
 .movie-item:hover .movie-item-img{
     transform: scale(1.2);
-    
     margin: 0 30px;
+    opacity: 0.5;
 }
 .movie-item-img {
     width: 270px;

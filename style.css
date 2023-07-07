@@ -61,7 +61,7 @@ body {
 }
 
 .profile-container {
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
     align-items: center;
     column-gap: 20px;
@@ -105,6 +105,7 @@ body {
     cursor: pointer;
     position: absolute;
     right: 1px;
+    transition: 0.5s ease all;
 }
 
 /*!Navbar Ends*/
@@ -159,7 +160,8 @@ body {
 
 .featured-buttons {
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .featured-buttons button {
@@ -207,10 +209,13 @@ body {
     display: flex;
     align-items: center;
     column-gap: 30px;
+    transform: translateX(0);
+    transition: 1s all ease-in-out;
 }
 
 .movie-list-wrapper{
     overflow: hidden;
+    position: relative;
 }
 .movie-item {
     position: relative;
@@ -275,4 +280,78 @@ body {
     opacity: 1;
 }
 
+.arrow{
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: 0.5;
+    transition: 0.5s ease all;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    opacity: 1;
+    
+}
 /*!Movie List ends*/
+
+/*!Dark Mode starts*/
+.movie-list-title.active
+{
+    color: black;
+}
+.container.active{
+    background-color: white;
+}
+
+.navbar.active{
+    background-color: white;
+    color: black;
+}
+.sidebar i.active{
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.toggle.active
+{
+    background-color: black;
+}
+
+.toggle-ball.active
+{
+    background-color: white;
+    transform: translateX(-20px);
+}
+.movie-list-filter select.active
+{
+    background-color: white;
+    color: black;
+}
+/*!Dark Mode ends*/
+
+/*!Responsive Starts*/
+@media only screen and (max-width:800px){
+    .menu-container{
+        display: none;
+    }
+    .featured-content{
+        height: 50vh;
+    }
+    .featured-title{
+        width: 200px;
+    }
+    .featured-desc{
+        overflow: hidden;
+        display:-webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width: 200px;
+        padding: 0;
+    }
+}
+/*!Responsive ends*/
